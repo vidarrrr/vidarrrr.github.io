@@ -10,6 +10,7 @@ I guess the main problem it is when first time is creating the framelayout will 
 My solution is we should put in a layout this framelayout so there will be a fixed size space in app. But we should implement the size of layout so I preferred linearlayout (I used constrainlayout before but i couldn't be success if you know a better solution post it so when people need can check you blog).
 
 **activity_main.xml** **Tabbed Activity Project**
+
 		 <TabLayout
             android:id="@+id/tabs"
             android:layout_width="match_parent"
