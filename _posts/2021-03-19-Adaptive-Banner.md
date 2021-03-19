@@ -15,6 +15,7 @@ My solution is we should put in a layout this framelayout so there will be a fix
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="?attr/colorPrimary" />
+			
 		<LinearLayout
             app:layout_constraintTop_toTopOf="parent"
             android:layout_width="match_parent"
