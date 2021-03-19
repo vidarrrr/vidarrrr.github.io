@@ -10,47 +10,48 @@ NestedScrollView freezes the listview so you can't slide. But we can do it with 
 
 **activity_main.xml** 
 
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fillViewport="true" //fill the view
-    >
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
+	<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:fillViewport="true" //fill the view
+		>
 
-        android:layout_height="match_parent"
-        android:adjustViewBounds="true"
-        android:background="#ffffff"
-        android:orientation="vertical"
-        android:scaleType="fitCenter"> 
-        <!--android:padding="10dp"-->
-       
-	   <TextView
-            android:id="@+id/text1"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:layout_width="match_parent"
 
-            android:text="@string/string"
+			android:layout_height="match_parent"
+			android:adjustViewBounds="true"
+			android:background="#ffffff"
+			android:orientation="vertical"
+			android:scaleType="fitCenter"> 
+			<!--android:padding="10dp"-->
+		   
+		   <TextView
+				android:id="@+id/text1"
+				android:layout_width="match_parent"
+				android:layout_height="40dp"
 
-            app:layout_constraintTop_toTopOf="parent" />
-	   
-        <ListView
-            android:id="@+id/listView"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
+				android:text="@string/string"
 
-            android:layout_marginBottom="10dp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
+				app:layout_constraintTop_toTopOf="parent" />
+		   
+			<ListView
+				android:id="@+id/listView"
+				android:layout_width="match_parent"
+				android:layout_height="200dp"
 
-            app:layout_constraintTop_toBottomOf="@id/text1"
+				android:layout_marginBottom="10dp"
+				app:layout_constraintLeft_toLeftOf="parent"
+				app:layout_constraintRight_toRightOf="parent"
 
-            />
+				app:layout_constraintTop_toBottomOf="@id/text1"
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</ScrollView>
+				/>
+
+		</androidx.constraintlayout.widget.ConstraintLayout>
+	</ScrollView>
 
 
